@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Tree
+  - wall
+  - oyzi
+  - deshi
+  - sapling
+  - hutaba
+  - stamp
+  - connection
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - charakter
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: haikei
+    uniqueID: 2739724075
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: kirikabu
+    uniqueID: 1015659165
+    locked: 0
+  - name: kumo
+    uniqueID: 3664055195
+    locked: 0
+  - name: ki
+    uniqueID: 2686965175
+    locked: 0
+  - name: Front Oyazi arm
+    uniqueID: 896100483
+    locked: 0
+  - name: back Bowl
+    uniqueID: 2961401259
+    locked: 0
+  - name: ui
+    uniqueID: 1315868119
+    locked: 0
