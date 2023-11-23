@@ -1305,6 +1305,7 @@ Animation:
   serializedVersion: 3
   m_Animation: {fileID: 7400000, guid: c8aa8ca42ce6b4b4daa54b43ab8a8a7e, type: 2}
   m_Animations:
+  - {fileID: 7400000, guid: d6f11d4aa338e48d3bb581508d5042f1, type: 2}
   - {fileID: 7400000, guid: c8aa8ca42ce6b4b4daa54b43ab8a8a7e, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 0
@@ -1399,3 +1400,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1742833040 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9040523646762840300, guid: 7dfc48f0ed0e0496283c48ffc9e2a4d5,
+    type: 3}
+  m_PrefabInstance: {fileID: 715202087}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1742833044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1742833040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbe0a3e45e3b50144948b02e0e1ec463, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 15
