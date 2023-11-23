@@ -22,7 +22,8 @@ public class anim : MonoBehaviour
            is_enabled_home_button = false;
            an.Play("dialog_Animation");
            gameobject2.SetActive(true);
-       }
+            Debug.Log("ダイアログ・マスク有効化");
+        }
         
 
     }
@@ -31,6 +32,7 @@ public class anim : MonoBehaviour
         an.Play("dialog_Animation2");
         is_enabled_home_button = true;
         gameobject2.SetActive(false);
+        Debug.Log("ダイアログ・マスク無効化");
 
     }
     
