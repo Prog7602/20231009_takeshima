@@ -5,10 +5,10 @@ using UnityEngine;
 public class KusuguriScript : MonoBehaviour
 {
     public GameObject voice;
-    public GameObject Canvas;
-    private float flg = 0;
+    public GameObject man;
+    public Wait Wcs;
 
-    public AudioClip kusugurisound;
+    public AudioClip sound;
 
     AudioSource audioSource;
 
@@ -26,21 +26,14 @@ public class KusuguriScript : MonoBehaviour
 
     public void Onfoot2Touched()
     {
-        if (flg == 0)
+        if (Wcs.flg == 0)
         {
             GameObject voiceclone = Instantiate(voice, new Vector2(0f, 0f), Quaternion.Euler(0f, 0f, 0f));
-            voiceclone.transform.SetParent(this.Canvas.transform, false);
-            flg = 1;
-            Invoke("count", 2f);
+            //voiceclone.transform.SetParent(this.man.transform, false);
 
-            audioSource.PlayOneShot(kusugurisound);
+            Wcs.wait();
 
-            Debug.Log("タッチされました");
+            audioSource.PlayOneShot(sound);
         }
-    }
-
-    public void count()
-    {
-        flg = 0;
     }
 }
