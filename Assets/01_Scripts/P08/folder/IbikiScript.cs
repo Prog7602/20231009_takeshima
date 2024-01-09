@@ -6,7 +6,7 @@ public class IbikiScript : MonoBehaviour
 {
     public GameObject voice;
     public GameObject Canvas;
-    private float flg = 0;
+    public Wait Wcs;
 
     public AudioClip ibikisound;
 
@@ -26,20 +26,14 @@ public class IbikiScript : MonoBehaviour
 
     public void OnHeadTouched()
     {
-        if (flg == 0)
+        if (Wcs.flg == 0)
         {
-            GameObject voiceclone = Instantiate(voice, new Vector2(50f, 20f), Quaternion.Euler(0f, 0f, 90f));
-            voiceclone.transform.SetParent(this.Canvas.transform, false);
-            flg = 1;
-            Invoke("count", 2f);
+            GameObject voiceclone = Instantiate(voice, new Vector2(0f, 0f), Quaternion.Euler(0f, 0f, 90f));
+            //voiceclone.transform.SetParent(this.Canvas.transform, false);
+
+            Wcs.wait();
 
             audioSource.PlayOneShot(ibikisound);
         }
-        //Debug.Log("タッチされました");
-    }
-
-    public void count()
-    {
-        flg = 0;
     }
 }

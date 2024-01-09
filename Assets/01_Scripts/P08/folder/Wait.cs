@@ -2,24 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DestroyScript : MonoBehaviour
+public class Wait : MonoBehaviour
 {
-    private float time = 0.0f;
-    public float liveTime;
+    public int flg = 0;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        time += Time.deltaTime;
+        
+    }
 
-        if (time >= liveTime)
-        {
-            Destroy(this.gameObject);
-        }
+    public void wait()
+    {
+        flg = 1;
+        Invoke("count", 4.0f);
+    }
+
+    public void count()
+    {
+        flg = 0;
     }
 }
